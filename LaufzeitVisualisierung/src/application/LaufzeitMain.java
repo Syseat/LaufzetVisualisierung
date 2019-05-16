@@ -11,8 +11,21 @@ public class LaufzeitMain extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			BorderPane root = new BorderPane();
-			Scene scene = new Scene(root,400,400);
+			Scene scene = new Scene(root,1000,800);
+			
+			
+			root.getChildren().add(new GUI(scene));
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			primaryStage.setResizable(false);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {
